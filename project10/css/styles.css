@@ -1,0 +1,18 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    text-align: center;
+}
+
+button{
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#base #altura{
+    width: 400px;
+    margin-top: 10px;
+    font-size: 24px;
+    border-radius: 8px;
+}
