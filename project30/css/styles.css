@@ -29,6 +29,11 @@ Em: relativo al padre 2em, doble de...
 %: dependiente del tamaño del padre
 Px: absoluta, the only one
 
+RGB - A (Trasparencia)
+HEX
+
+Imagen de fondo
+background image
 */
 
 
@@ -37,6 +42,7 @@ Px: absoluta, the only one
 body{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: -moz-element();
 }
 
 input{

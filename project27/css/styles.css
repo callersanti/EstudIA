@@ -1,0 +1,39 @@
+/*CSSOM CSS Object Model Está en la RAM
+
+Taller 2
+- Todos los li fondo gris
+- Fuente del body Courier
+- Items del body centrados
+- clase activo, fondo azul, texto blanco
+- primer li borde verde
+- último li texto rojo
+*/
+
+body{
+    place-items: center;
+    font-family: 'Courier New', Courier, monospace
+
+}
+
+h2{
+    color: blueviolet;
+}
+
+li{
+    background-color: gray;
+}
+
+.activo{
+    background-color: blue;
+    color: white;
+}
+
+li:first-child{
+    
+    border: 2px solid green;
+}
+
+
+li:last-child{
+    color: red;
+}

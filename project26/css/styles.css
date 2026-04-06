@@ -1,0 +1,45 @@
+/*
+CSS: Cascade Style Sheets
+
+Selectores en CSS
+Te dicen a qué elemento de HTML voy a aplicar los estilos.
+
+1. Etiqueta HTML: h1{color:red} div{} No mata nada.
+
+2. Clase: Va a afectar a todos los elementos de la clase, ej:
+class=".nombre-clase". Class superior a etiqueta, grupal. Mata la etiqueta.
+
+3. ID: afecta elemento con ID. Para JS. Mata lo que sea.
+
+4. Pseudo-clases: codigo interno. Afecta elementos según 
+posición y estado.
+
+*/
+
+
+/*Taller
+Objetivo: 
+1. Todos los p dentro de contenedor gris
+2. especial azul
+3. p dentro de div interno rojo
+4. Primer p fondo amarillo
+*/
+
+.contenedor p{
+    color: gray;
+}
+
+.contenedor .especial{
+    color: blue;
+}
+
+.contenedor div p{
+    color: red;
+}
+
+.contenedor p:first-of-type{
+    background-color: yellow;
+}
+#parrafo3{
+    background-color: white;
+}

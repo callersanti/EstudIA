@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #B6EEA6;
+}
+
+h2{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+input,select{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    margin: 5px;
+    width: 180px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    
+}
+
+button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    margin: 10px;
+    background: #A9FFCB;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    background: #30be09;
+}
+
+#container {
+    color: red;
+    font-size: 24px;
+    margin-top: 8px;
+}

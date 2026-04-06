@@ -15,23 +15,6 @@ class=".nombre-clase". Class superior a etiqueta, grupal. Mata la etiqueta.
 posición y estado.
 
 Especificidad y Cascada
-
-width total = width + padding + border
-padding: x2 si solo hay un numero
-border: x2 si solo hay un numero
-margin: up right down left
-
-Unidades de medida
-Forma de definición del tamaño en CSS: 
-width, height, text, spaces
-
-Em: relativo al padre 2em, doble de...
-%: dependiente del tamaño del padre
-Px: absoluta, the only one
-
-*/
-
-
 */
 
 body{
