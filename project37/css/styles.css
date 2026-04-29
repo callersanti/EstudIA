@@ -1,0 +1,211 @@
+/*
+CSS: Cascade Style Sheets
+
+              Selectores en CSS
+
+Te dicen a qué elemento de HTML voy a aplicar los estilos.
+
+1. Etiqueta HTML: h1{color:rojo} div{} No mata nada.
+
+2. Clase: Va a afectar a todos los elementos de la clase, ej:
+class=".nombre-clase". Class superior a etiqueta, grupal. Mata la etiqueta.
+
+3. ID: afecta elemento con ID. Para JS. Mata lo que sea.
+
+4. Pseudo-clases: codigo interno. Afecta elementos según 
+posición y estado.
+
+            Especificidad y Cascada
+
+width total = width + padding + border
+padding: x2 si solo hay un numero
+border: x2 si solo hay un numero
+margin: up right down left
+
+            Unidades de medida
+Forma de definición del tamaño en CSS: width, height, text, spaces
+
+Em: relativo al padre 2em, doble de...
+%: dependiente del tamaño del padre
+Px: absoluta, the only one
+
+          Orden CSS
+1. Contenido, background
+2. Padding
+3. Border
+4. Margin
+
+           Tipografía
+Lo que controla lo que se ve en pantalla
+1. Tipo de letra
+2. Tamaño
+3. Grosor
+4. Espaciado
+5. Alineación
+
+En proyectos de alta demanda, el 70% es texto
+font-family: tipo de letra
+font-size: tamaño de letra. Se usa rem, porque se basa en el root, html.
+1 rem = tamaño de referencia base del root
+font-weight: grosor, bold. 100-900
+line-height: espaciado entre líneas
+text-align: posicionamiento, alineación, aunque se usa flex
+text-transform: transformar, ej capitalze
+letter-spacing: espacio entre letras
+
+Pseudoclases y variables se comenta
+
+Display y posicionamiento: cómo se comporta un elemento en la página
+1. Si ocupa toda la línea
+2. Si se pone en la fila
+3. Si se oculta
+
+- Block: ocupa todo el ancho disponible, empuja elementos hacia abajo.
+- Inline: no ocupa toda la línea, se acomoda al lado de otros elementos.
+No se puede usar ni width, ni height.
+- Inline-block: En línea, permite ancho y alto.
+- None: Elemento desaparece, pseudoclase.
+
+          Position: controla ubicación, mover manualmente
+
+- Static: Viene por defecto
+- Relative: Se mueve desde su posición original, mas sigue ocupando su espacio.
+Punto de referencia.
+- Absolute: Sale del flujo normal, se posiciona respecto al padre (punto de 
+referencia).
+- Fixed: Fijo en pantalla. No se mueve al scroll.
+- Sticky: Se fija al hacer scroll, funciona dentro contenedor.
+top, left, down: posiciones.
+
+Z-INDEX Capas: Controla qué elemento queda encima del otro. Position diferente
+a static. Prioridad
+
+                                FLEXBOX
+Sistema para alinear y distribuir elementos del layout (maquetación, disposición)
+Trabaja con contenedor padres y elementos dentro hijos. Sempre en línea
+
+Trabaja con 2 ejes, el principal (horizontal), izquirda a derecha
+El secundario, vertical, arriba y abajo.
+display: flex; eje horizontal
+justify-content:space-between separa y promedia según space
+justify-content flex-start todos elementos al inicio eje principal
+justify-content flex-end todos elementos al fin eje principal
+align-items center eje vertical
+flex-direction column alineación, fila o columa
+gap inherit espacio entre elementos
+
+            GRID: crear estructura tipo página. Dividir pantalla en tabla. 
+Necesitas contenedor padre. 
+Columnas: más importante
+grid-template-columns: 1fr 1fr; Así defines las columnas
+grid-template-rows: 100px 100px; Así defines filas
+
+fr: fracción de espacio disponible. 
+if 2fr, 2 veces la primera
+
+Las filas solo crean filas, no columnas. La fila no siempre va en px.
+También unidad fr: adaptable.
+px: rígido.  
+auto: depende del content
+minmax(): control inteligente
+repeat: forma limpia, forma de escrubir filas y columnas
+    ej: grid-template-columns: repeat(3, 1fr)
+
+GRID-Area/Posicionamiento
+Ubicar elementos en el GRID segun nombre, en vez de números
+grid-template-areas:
+    "header header"
+    "lateral main" 
+    "footer footer";
+    height: 100vh;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: bisque;
+}
+
+.dashboard{
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+    height: 100vh;
+
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: goldenrod;
+    padding: 20px;
+}
+
+.sidebar nav a{
+    display: block;
+    color: white;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.sidebar nav a:hover{
+    color: black;
+}
+
+.header{
+    grid-area: header;
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid salmon;
+}
+
+.user{
+    background: blanchedalmond;
+}
+
+.main{
+    grid-area: main;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card{
+    background-color: bisque;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20x;
+}
+
+.chart, .table{
+    background-color: beige;
+    padding: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    min-height: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    margin: 10px;
+}

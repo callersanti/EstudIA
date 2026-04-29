@@ -1,0 +1,29 @@
+.product-img-main{
+    transition: transform 0.3s ease;
+}
+
+.product-img-main:hover{
+    transform: scale(1.02);
+}
+
+.tracking-wider{
+    letter-spacing: 0.08em;
+}
+
+.colors{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid rebeccapurple;
+    transition: transform 0.2s;
+}
+
+.colors:hover{
+    transform: scale(1.1); /*Se ponga grane*/
+}
+
+.colors:active{
+    border-color: aqua;
+}

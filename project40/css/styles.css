@@ -1,0 +1,21 @@
+/*
+Variables en CSS
+
+--nombreVariable. Se usan con var()
+:root
+
+variables dinámicas
+A diferencia de Sass, las varables en CSS funcionan en real time. 
+*/
+
+
+*/
+
+:root{
+    --mainColor: white;
+    --size: 20px;
+}
+
+h1{
+    color: var(--mainColor);
+}

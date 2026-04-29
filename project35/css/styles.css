@@ -1,0 +1,98 @@
+/*
+CSS: Cascade Style Sheets
+
+              Selectores en CSS
+
+Te dicen a qué elemento de HTML voy a aplicar los estilos.
+
+1. Etiqueta HTML: h1{color:rojo} div{} No mata nada.
+
+2. Clase: Va a afectar a todos los elementos de la clase, ej:
+class=".nombre-clase". Class superior a etiqueta, grupal. Mata la etiqueta.
+
+3. ID: afecta elemento con ID. Para JS. Mata lo que sea.
+
+4. Pseudo-clases: codigo interno. Afecta elementos según 
+posición y estado.
+
+            Especificidad y Cascada
+
+width total = width + padding + border
+padding: x2 si solo hay un numero
+border: x2 si solo hay un numero
+margin: up right down left
+
+            Unidades de medida
+Forma de definición del tamaño en CSS: width, height, text, spaces
+
+Em: relativo al padre 2em, doble de...
+%: dependiente del tamaño del padre
+Px: absoluta, the only one
+
+          Orden CSS
+1. Contenido, background
+2. Padding
+3. Border
+4. Margin
+
+           Tipografía
+Lo que controla lo que se ve en pantalla
+1. Tipo de letra
+2. Tamaño
+3. Grosor
+4. Espaciado
+5. Alineación
+
+En proyectos de alta demanda, el 70% es texto
+font-family: tipo de letra
+font-size: tamaño de letra. Se usa rem, porque se basa en el root, html.
+1 rem = tamaño de referencia base del root
+font-weight: grosor, bold. 100-900
+line-height: espaciado entre líneas
+text-align: posicionamiento, alineación, aunque se usa flex
+text-transform: transformar, ej capitalze
+letter-spacing: espacio entre letras
+
+Pseudoclases y variables se comenta
+
+Display y posicionamiento: cómo se comporta un elemento en la página
+1. Si ocupa toda la línea
+2. Si se pone en la fila
+3. Si se oculta
+
+- Block: ocupa todo el ancho disponible, empuja elementos hacia abajo.
+- Inline: no ocupa toda la línea, se acomoda al lado de otros elementos.
+No se puede usar ni width, ni height.
+- Inline-block: En línea, permite ancho y alto.
+- None: Elemento desaparece, pseudoclase.
+
+          Position: controla ubicación, mover manualmente
+
+- Static: Viene por defecto
+- Relative: Se mueve desde su posición original, mas sigue ocupando su espacio.
+Punto de referencia.
+- Absolute: Sale del flujo normal, se posiciona respecto al padre (punto de 
+referencia).
+- Fixed: Fijo en pantalla. No se mueve al scroll.
+- Sticky: Se fija al hacer scroll, funciona dentro contenedor.
+top, left, down: posiciones.
+
+Z-INDEX Capas: Controla qué elemento queda encima del otro. Position diferente
+a static. Prioridad
+
+                                FLEXBOX
+Sistema para alinear y distribuir elementos del layout (maquetación, disposición)
+Trabaja con contenedor padres y elementos dentro hijos. Sempre en línea
+
+Trabaja con 2 ejes, el principal (horizontal), izquirda a derecha
+El secundario, vertical, arriba y abajo.
+display: flex; eje horizontal
+justify-content:space-between separa y promedia según space
+justify-content flex-start todos elementos al inicio eje principal
+justify-content flex-end todos elementos al fin eje principal
+align-items center eje vertical
+flex-direction column alineación, fila o columa
+gap inherit espacio entre elementos
+
+*/
+
