@@ -19,34 +19,58 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light border-bottom sticky-top py-3">
-            <section class="container px-4 px-lg-5">
-                <a class="navbar-brand fw-bold fs-4" href="index.html">
-                    <img src="./images/logo.png" alt="Logo Heladería Venus">
+        <nav class="navbar navbar-expand-lg py-2">
+            <section class="container-lg px-lg-5 py-lg-2">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/logo.png" alt="Logo Heladería Venus" width="90px">
                 </a>
-                 
-                <ion class="collapse navbar-collapse" id="navContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item px-2"><a class="nav-link active text-white" href="index.html">Inicio</a></li>
-                        <li class="nav-item px-2"><a class="nav-link text-white" href="#">Productos</a></li>
-                        <li class="nav-item px-2"><a class="nav-link text-white" href="#">Nosotros</a></li>
+                <section class="collapse navbar-collapse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-3"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                        <li class="nav-item px-lg-2"><a class="nav-link text-white" href="#">Productos</a></li>
+                        <li class="nav-item px-lg-2"><a class="nav-link text-white" href="#">Nosotros</a></li>
                     </ul>
                     <section class="d-flex align-items-center gap-4">
                         <a href="#" class="text-white fs-4"><i class="bi bi-search"></i></a>
-                        <a href="#" class="text-white fs-4 position-relative"><i class="bi bi-bag"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.6rem;">0</span>
-                        </a>
                     </section>
+                </section>
             </section>
         </nav>
     </header>
-    <main>
-        <section>
-
+    <main class="container">
+        <section class="row gx-lg-5 align-items-center">
+            <section class="col-md-7 p-lg-5 m-lg-5">
+                <header class="mb-4">
+                    <h1 class="display-3 fw-bold text-white mb-2">Heladería Venus</h1>
+                </header>
+                <p class="h4 text-white fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <section class="m-5 p-lg-5 d-flex gap-4">
+                    <button class="btn btn-outline-light px-lg-4 py-2 fs-3">Ordena ya</button>
+                    <button class="btn btn-secondary px-lg-4 py-2 fs-3">Menú</button>
+                </section>
+            </section>
+            <section class="col-md-3 p-lg-5 m-lg-5 d-flex flex-column align-items-center carousel slide" data-bs-ride="carousel">
+                <section class="carousel-inner">
+                    <section class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        class="d-block w-100" alt="#">
+                    </section>
+                    <section class="carousel-item">
+                        <img src="#" alt="#">
+                    </section>
+                    <section class="carousel-item">
+                        <img src="#" alt="#">
+                    </section>
+                </section>
+            </section>
         </section>
     </main>
     <footer>
-        
+        <section>
+
+        </section>
     </footer>
     <!--Enlace JS-->
     <script src="js/script.js"></script>
