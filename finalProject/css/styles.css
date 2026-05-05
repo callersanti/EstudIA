@@ -6,10 +6,29 @@ Orden:
 4. Margin
 */
 
+
+
 body{
     background: linear-gradient(180deg, #FDB9BA 0%, #976E6F 100%); 
     font-family: "Poppins", sans-serif;
 }
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card{
+    background-color: rgba(0, 0, 0,0.2);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 
