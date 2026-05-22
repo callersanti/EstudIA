@@ -53,7 +53,10 @@
                         </li>
                     </ul>
                     <div class="d-flex align-items-center gap-4">
-                        <a href="#" class="text-white fs-4 px-2"><i class="bi bi-cart"></i></i></a>
+                        <a id="cart" href="#" class="text-white fs-4 px-2">
+                            <i class="bi bi-cart"></i>
+                            <span id="badge">0</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -67,7 +70,7 @@
                     Los sabores más frescos de la ciudad, hechos con ingredientes naturales y mucho amor.
                 </p>
                 <div class="mt-4 mb-4 d-flex gap-4 flex-wrap">
-                    <button id="orderButton" class="btn btn-outline-light px-3 py-2 fs-3 mt-3">Pide ya</button>
+                    <a href="https://wa.me/573165028920" class="btn btn-outline-light px-3 py-2 fs-3 mt-3">Pide ya</a> 
                     <button id="menuButton" class="btn btn-secondary px-3 py-2 fs-3 mt-3">Menú</button>
                 </div>
             </div>
@@ -121,6 +124,7 @@
             </div>
         </section>
     </main>
+
     <section id="productos">
         <h2 class="text-white text-center mb-5 mt-3 fw-bold fs-3">Productos</h2>
         <div class="cards container">
@@ -173,9 +177,10 @@
             </div>
         </div>
     </section>
+
     <footer id="footer" class="d-flex justify-content-center align-items-center m-lg-3 text-white gap-3 flex-wrap">
         <p class="mt-2 mb-0">Todos los derechos reservados. Heladería Venus.</p>
-        <a href="https://www.rappi.com.co/restaurantes/900437345-heladeria-venus" class="fs-3"><i class="bi bi-whatsapp text-success"></i></a>
+        <a href="https://wa.me/573165028920" class="fs-3"><i class="bi bi-whatsapp text-success"></i></a>
         <a href="https://www.instagram.com/heladeriavenus/" class="fs-3"><i class="bi bi-instagram text-danger"></i></a>
         <a href="https://maps.app.goo.gl/2c9Sh8rj2qZapV3Y6" class="fs-3"><i class="bi bi-geo-alt"></i></a>
     </footer>
