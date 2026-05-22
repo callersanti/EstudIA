@@ -60,40 +60,66 @@
         </nav>
     </header>
     <main class="container">
-        <section class="row gx-lg-5 align-items-center">
-            <section class="col-md-6 p-lg-5 m-lg-5">
-                <header class="mb-lg-4">
-                    <h1 class="display-3 fw-bold text-white">Heladería Venus</h1>
-                </header>
-                <p class="h4 text-white fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <section class="row gx-5 align-items-center">
+            <div class="col-md-6 p-5 m-5">
+                <h1 class="display-3 fw-bold text-white mb-3 mt-5">Heladería Venus</h1>
+                <p class="h4 text-white fw-light mt-4">
+                    Los sabores más frescos de la ciudad, hechos con ingredientes naturales y mucho amor.
                 </p>
-                <section class="mt-lg-4 mb-lg-4 d-flex gap-4">
-                    <button id="orderButton" class="btn btn-outline-light px-lg-4 py-2 fs-3">Ordena ya</button>
-                    <button id="menuButton" class="btn btn-secondary px-lg-4 py-2 fs-3">Menú</button>
-                </section>
-            </section>
-            <section id="carousel" class="carousel slide col-md-4 p-lg-5 d-flex flex-column mb-lg-5 mt-lg-3" data-bs-ride="carousel" data-bs-interval="5000">
-                <section class="carousel-inner rounded-3">
-                    <section class="carousel-item active">
-                        <img src="./images/review (1).png" 
-                        class="d-block w-100" alt="Slide 1">
-                    </section>
-                    <section class="carousel-item">
-                        <img src="./images/review (2).png" 
-                        class="d-block w-100" alt="Slide 2">
-                    </section>
-                    <section class="carousel-item">
-                        <img src="./images/review (3).png" 
-                        class="d-block w-100" alt="Slide 3">
-                    </section>
-                </section>
-                <footer class="text-white d-flex justify-content-center mt-lg-3">
-                    Reseñas
-                </footer>
-            </section>
-        </section>
+                <div class="mt-4 mb-4 d-flex gap-4 flex-wrap">
+                    <button id="orderButton" class="btn btn-outline-light px-3 py-2 fs-3 mt-3">Pide ya</button>
+                    <button id="menuButton" class="btn btn-secondary px-3 py-2 fs-3 mt-3">Menú</button>
+                </div>
+            </div>
 
+            <!-- Review carousel -->
+            <div id="carousel" class="carousel slide carousel-fade col-md-4 p-5 d-flex flex-column mb-5 mt-3"
+                data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner mt-3">
+                    <div class="carousel-item active mt-3">
+                        <div class="d-flex flex-column">
+                            <p class="text-center text-white fw-bold fs-3">David Peláez</p>
+                            <p class="text-center text-white">Las ensaladas de frutas son muy ricas.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-2">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item mt-3">
+                        <div class="d-flex flex-column">
+                            <p class="text-center text-white fw-bold fs-3">Jerónimo Durango</p>
+                            <p class="text-center text-white">Helados deliciosos. Atención excelente.
+                                Absolutamente recomiendo este lugar</p>
+                            <div class="d-flex justify-content-center gap-2 mt-2">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item mt-3">
+                        <div class="d-flex flex-column">
+                            <p class="text-center text-white fw-bold fs-3">Santiago Calle</p>
+                            <p class="text-center text-white">Delicioso. Tienen copas riquísimas y la ensalada
+                                de frutas es brutal. Volveré.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-2">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <section>
         <header class="text-white d-flex justify-content-center mb-lg-5 mt-lg-3 fw-bold fs-3"> 
